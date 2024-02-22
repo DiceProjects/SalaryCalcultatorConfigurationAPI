@@ -1,0 +1,2 @@
+# SalaryCalcultatorConfigurationAPI
+Configuration API
