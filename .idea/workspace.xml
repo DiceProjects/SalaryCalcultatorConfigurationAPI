@@ -5,20 +5,36 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f5aac603-ef51-4163-92a6-4c4e4308cd15" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/diceprojects/configurationsservice/ConfigurationsServiceApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/diceprojects/configurationsservice/ConfigurationsServiceApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/diceprojects/configurationsservice/config/WebConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/diceprojects/configurationsservice/context/SwaggerConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/diceprojects/configurationsservice/controllers/CountriesController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/diceprojects/configurationsservice/exceptions/GlobalExceptionHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/diceprojects/configurationsservice/persistences/models/dtos/CountrySaveDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/diceprojects/configurationsservice/persistences/models/entities/Countries.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/diceprojects/configurationsservice/persistences/models/entities/DeductionDetails.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/diceprojects/configurationsservice/persistences/models/entities/TaxDetails.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/diceprojects/configurationsservice/persistences/repositories/CountriesRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/diceprojects/configurationsservice/persistences/repositories/DeductionDetailsRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/diceprojects/configurationsservice/persistences/repositories/TaxDetailsRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/diceprojects/configurationsservice/services/CountriesService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/diceprojects/configurationsservice/services/CountriesServiceImplement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/diceprojects/configurationsservice/ConfigurationsServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/diceprojects/configurationsservice/ConfigurationsServiceApplication.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -33,9 +49,9 @@
       </MavenGeneralSettings>
     </option>
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 3
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
   <component name="ProjectId" id="2cj3YanDO9PGZfuuOqcFJMtzzsS" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -44,9 +60,16 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "Spring Boot.ConfigurationsServiceApplication.executor": "Debug",
+    "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/SalaryCalculatorAPI/msvc-configurations/Configurations Service/src/main/java/com/diceprojects/configurationsservice",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -55,6 +78,14 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\SalaryCalculatorAPI\msvc-configurations\Configurations Service\src\main\java\com\diceprojects\configurationsservice" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="ConfigurationsServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
@@ -81,21 +112,13 @@
       <option name="presentableId" value="Default" />
       <updated>1708611212201</updated>
       <workItem from="1708611213256" duration="1780000" />
+      <workItem from="1708693572515" duration="5184000" />
+      <workItem from="1709119061029" duration="6692000" />
+      <workItem from="1709146220527" duration="6079000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/diceprojects/configurationsservice/ConfigurationsServiceApplication.java</url>
-          <line>12</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

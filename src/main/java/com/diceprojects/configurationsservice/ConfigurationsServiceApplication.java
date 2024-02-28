@@ -7,7 +7,7 @@ import org.springframework.cache.annotation.EnableCaching;
 import org.springframework.data.mongodb.repository.config.EnableReactiveMongoRepositories;
 
 @SpringBootApplication
-@EntityScan("com.diceprojects.configurationservice.persistences.models.entities")
+@EntityScan("com.diceprojects.configurationsservice.persistences.models.entities")
 @EnableReactiveMongoRepositories(basePackages = "com.diceprojects.configurationsservice.persistences.repositories")
 @EnableCaching
 public class ConfigurationsServiceApplication {

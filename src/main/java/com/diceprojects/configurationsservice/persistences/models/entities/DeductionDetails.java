@@ -1,26 +1,32 @@
 package com.diceprojects.configurationsservice.persistences.models.entities;
 
 import lombok.Data;
-import nonapi.io.github.classgraph.json.Id;
+import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
+import java.util.Date;
 
 /**
- * Representa las deducciones aplicables a un cálculo salarial,
- * incluyendo indicadores booleanos para la presencia de ciertas deducciones
- * y el porcentaje de contribución sindical si aplica.
- * Esta entidad se almacena en la colección 'Deductions' de MongoDB.
+ * Representa los detalles de una deducción específica aplicable a un cálculo salarial.
+ * <p>
+ * Esta entidad se almacena en la colección 'Deduction_Details' de MongoDB y se utiliza
+ * para detallar las diferentes deducciones que se aplican a un salario, como las
+ * contribuciones a la seguridad social, impuestos, entre otros. Cada instancia de
+ * `DeductionDetails` puede estar asociada a un país específico, lo que permite aplicar
+ * diferentes normativas según la ubicación.
+ * </p>
  */
 @Data
-@Document(collection = "Deductions")
-public class Deductions {
+@Document(collection = "Deduction_Details")
+public class DeductionDetails {
 
     @Id
     private String id;
-    private boolean retirement;
-    private boolean healthInsurance;
-    private boolean pami;
-    private boolean unionContribution;
-    private double unionContributionPercent;
-    private boolean taxableIncomeCap;
+    private String deductionName;
+    private Double value;
+    private String countryId;
+    private String createdBy;
+    private Date createdDate;
+    private String lastModifiedBy;
+    private Date lastModifiedDate;
 
 }
