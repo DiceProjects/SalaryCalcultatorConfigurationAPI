@@ -42,7 +42,7 @@ public class CountriesServiceImplement implements CountriesService {
      * Además, se manejan errores específicos y se transforman en {@link ResponseStatusException}
      * para proporcionar mensajes de error significativos y códigos de estado HTTP adecuados.
      * </p>
-     * @param country El país a ser guardado, no debe tener 'countryCode' ni 'countryName' nulos o vacíos.
+     * @param countryDTO El país a ser guardado, no debe tener 'countryCode' ni 'countryName' nulos o vacíos.
      * @return Un {@link Mono} que, si el guardado es exitoso, emite el país guardado, o un {@link Mono} de error
      *         si el país no puede ser guardado debido a campos inválidos o conflictos de clave única.
      */
